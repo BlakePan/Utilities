@@ -1,0 +1,37 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Demo figure{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    mark {
+      background-color: yellow;
+      color: black;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2"></div>
+
+    <div class="col-sm-8">
+
+      <br><br>
+
+      <div class="panel panel-primary">
+          <div class="panel-body">
+            <img src={{ plot_fname }}  class="img-rounded">
+          </div>
+      </div>
+
+
+    </div>
+
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+
+{% endblock %}
