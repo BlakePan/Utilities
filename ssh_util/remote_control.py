@@ -1,11 +1,12 @@
+# -*- coding: utf-8 -*-
 import time
 import paramiko
 
 
-ssh_server = 'ip address to server'
+ssh_server = 'ip address of server'
 ssh_port = 22
 ssh_user = 'user name'
-ssh_key_file = 'file path to ssh key file'
+ssh_key_file = 'file path of ssh key file'
 
 
 def make_dir_in_remote(remote_path: str, target_dir_name: str)->int:

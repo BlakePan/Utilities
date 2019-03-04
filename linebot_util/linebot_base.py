@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from linebot import LineBotApi
 from linebot.models import TextSendMessage
 
