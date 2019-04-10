@@ -41,6 +41,21 @@ def _variable(name, shape,
                            trainable=trainable, collections=collections)
 
 
+def get_var_name(tf_var_name):
+    """
+    Return a variable name without symbols
+
+    :param tf_var_name:
+    org variable name
+
+    :return:
+    clean variable name
+    """
+    name_start = tf_var_name.find('/') + 1
+    name_end = tf_var_name.find(':')
+    return tf_var_name[name_start:name_end]
+
+
 def build_normalization(input_x, D, suffix=''):
     """
     Normalize input_x with mean and std
