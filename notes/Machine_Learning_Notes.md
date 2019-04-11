@@ -1,9 +1,10 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # Machine Learning Notes
 ## Algorithms
 ### Linear Regression
 #### model
 <p align="center">
-  <img src="http://latex.codecogs.com/gif.latex?\\h(x)=W'x+b}">
+  <img src="http://latex.codecogs.com/gif.latex?\\h(x)=W'x+b">
 </p>
 #### loss
 $$ MSE = \cfrac{1}{2m} * \sum (h(x)-y)^2 $$
