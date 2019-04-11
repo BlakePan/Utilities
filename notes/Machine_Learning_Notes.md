@@ -117,8 +117,6 @@ Normalize feature
 ### Dropout
 ### Regularization
 - L1
-
-$$ \lambda \sum_i |w_i|$$
 <p align="center">
   <img src="http://latex.codecogs.com/gif.latex?\\\lambda \sum_i |w_i|">
 </p>
