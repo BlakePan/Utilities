@@ -1,13 +1,10 @@
-<script src="//yihui.name/js/math-code.js"></script>
-<!-- Just one possible MathJax CDN below. You may use others. -->
-<script async
-  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 # Machine Learning Notes
 ## Algorithms
 ### Linear Regression
 #### model
-$$ h(x) = W'x + b $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\h(x)=W'x+b}">
+</p>
 #### loss
 $$ MSE = \cfrac{1}{2m} * \sum (h(x)-y)^2 $$
 #### gradient
