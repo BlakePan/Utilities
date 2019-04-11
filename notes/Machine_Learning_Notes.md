@@ -1,3 +1,8 @@
+<script src="//yihui.name/js/math-code.js"></script>
+<!-- Just one possible MathJax CDN below. You may use others. -->
+<script async
+  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 # Machine Learning Notes
 ## Algorithms
 ### Linear Regression
@@ -6,7 +11,7 @@ $$ h(x) = W'x + b $$
 #### loss
 $$ MSE = \cfrac{1}{2m} * \sum (h(x)-y)^2 $$
 #### gradient
-$$ \cfrac{1}{m} * \sum(h(x)-y) * x $$
+$$ \cfrac{1}{m} * \sum(h(x_i)-y) * x $$
 
 ### Logistic Regression
 #### model
