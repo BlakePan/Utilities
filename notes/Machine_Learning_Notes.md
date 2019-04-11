@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # Machine Learning Notes
 ## Algorithms
 ### Linear Regression
@@ -6,22 +5,39 @@
 <p align="center">
   <img src="http://latex.codecogs.com/gif.latex?\\h(x)=W'x+b">
 </p>
+
 #### loss
-$$ MSE = \cfrac{1}{2m} * \sum (h(x)-y)^2 $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\MSE = \cfrac{1}{2m} * \sum_{i=1}^m (h(x_i)-yi)^2">
+</p>
+
 #### gradient
-$$ \cfrac{1}{m} * \sum(h(x_i)-y) * x $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\cfrac{1}{m} * \sum_{i=1}^m(h(x_i)-y_i) * x_i">
+</p>
 
 ### Logistic Regression
 #### model
-$$ h(x) = g(W'x + b) $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\h(x) = g(W'x + b)">
+</p>
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\sigmoid: g(x) = \cfrac{1}{1 + e^{-x}}">
+</p>
 
-$$ sigmoid: g(x) = \cfrac{1}{1 + e^{-x}} $$
 #### loss
-$$ \cfrac{1}{m} \sum(-y*log(h(x)) - (1-y)*log(1-h(x))) $$
-#### gradient
-$$ \cfrac{1}{m} \sum(h(x)-y) * x $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\cfrac{1}{m} \sum(-y*log(h(x)) - (1-y)*log(1-h(x)))">
+</p>
 
-$$ g'(x) = g(x)(1-g(x))$$
+#### gradient
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\cfrac{1}{m} \sum(h(x)-y) * x">
+</p>
+
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\g'(x) = g(x)(1-g(x))">
+</p>
 
 ### Decision Tree
 
@@ -55,33 +71,46 @@ Unsupervised learning allows us to approach problems with little or no idea what
 
 ### gradient descent
 
-$$ min\ L(W) $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\min\ L(W)">
+</p>
 
-$$ w_i = w_i - \alpha * \cfrac{\partial}{\partial w_i}  L(W) $$ 
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\w_i = w_i - \alpha * \cfrac{\partial}{\partial w_i}  L(W)">
+</p>
 
 
 ### Feature Scaling
 Normalize feature
 
-$$ x_i = \cfrac {x_i - \mu} {\sigma} $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\x_i = \cfrac {x_i - \mu} {\sigma}">
+</p>
 
-$$ \mu = avg(X) $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\mu = avg(X)">
+</p>
 
-$$ \sigma = std(X) $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\sigma = std(X)">
+</p>
 
 ### Lost Functions
 
 - MSE
-
-$$ \cfrac{1}{2m} * \sum (h(x)-y)^2 $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\cfrac{1}{2m} * \sum (h(x)-y)^2">
+</p>
 
 - Logistic regression error
-
-$$ \cfrac{1}{m} \sum(-y*log(h(x)) - (1-y)*log(1-h(x))) $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\cfrac{1}{m} \sum(-y*log(h(x)) - (1-y)*log(1-h(x)))">
+</p>
 
 - cross entropy
-
-$$ \cfrac{1}{m} \sum(-y*log(h(x))) $$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\cfrac{1}{m} \sum(-y*log(h(x)))">
+</p>
 
 ### dynamic gradient clipping
 ### Batch normalization
@@ -90,12 +119,17 @@ $$ \cfrac{1}{m} \sum(-y*log(h(x))) $$
 - L1
 
 $$ \lambda \sum_i |w_i|$$
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\lambda \sum_i |w_i|">
+</p>
 
 - L2
-
-$$ \lambda \sum_i w_i^2 $$
-
-$$ \lambda $$ selected by cross validation
+<p align="center">
+  <img src="http://latex.codecogs.com/gif.latex?\\\lambda \sum_i w_i^2">
+</p>
+<p align="center">
+  <img\lambda $$ selected by cross validation">
+</p>
 
 ### cross validation
 ### Gradient Based Optimizers
