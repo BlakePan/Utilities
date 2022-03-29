@@ -28,7 +28,7 @@ Markdown==3.0.1
 MarkupSafe==1.1.1
 numpy==1.16.1
 pandas==0.24.1
-paramiko==2.4.2
+paramiko==2.10.1
 protobuf==3.6.1
 pyasn1==0.4.5
 pycparser==2.19
